@@ -1,0 +1,5 @@
+.mainLay{
+    background: rgb(97,88,222);
+background: linear-gradient(90deg, rgba(97,88,222,1) 14%, rgba(110,103,209,1) 54%, rgba(132,126,228,1) 80%, rgba(129,126,171,1) 100%);
+backdrop-filter: blur(30px);
+}

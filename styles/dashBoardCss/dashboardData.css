@@ -1,0 +1,80 @@
+
+.stats-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 1rem; */
+}
+/* .dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+.amount-con {
+    /* position: relative; */
+    width: 35vw;
+    display: flex;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2 50%;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+.income,
+.expense,
+.balance {
+    grid-column: span 3;
+    background: #FCF6F9;
+    height: 150px;
+    width: 150px;
+    border: 2px solid #ffffffa3;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: .3rem;
+}
+
+.income p,
+.expense p ,
+.balance p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+.history-con {
+    width: 28vw;
+    grid-column: 4 / -1;
+    margin-right: 1rem;
+}
+
+.history-con h2 {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.salary-title {
+    font-size: 1.2rem;
+}
+
+.salary-title span {
+    font-size: 1.8rem;
+}
+
+.salary-item {
+    background: #FCF6F9;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salary-item p {
+    font-weight: 600;
+    font-size: 1.6rem;
+}

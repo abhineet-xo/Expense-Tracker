@@ -1,0 +1,16 @@
+.mainSection{
+    width: 75vw;
+    height: 93vh;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.476);
+    border: 2px solid rgba(255, 255, 255, 0.288);
+    border-radius: 32px;
+    backdrop-filter: blur(4.5px);
+    overflow: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+    padding: 15px 15px 15px;
+
+}

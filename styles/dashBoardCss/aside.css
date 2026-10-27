@@ -1,0 +1,107 @@
+aside{
+    padding: 2rem 1.5rem;
+    width: 23%;
+    height: 93vh;
+    background-color: rgba(255, 255, 255, 0.476);
+    border-right: 2px solid rgba(255, 255, 255, 0.441);
+    
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.user{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.user img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fcf6f9;
+    box-shadow: 2px 5px 18px rgba(0,0,0,0.27);
+
+
+}
+aside ul {
+    list-style: none;
+}
+h2{
+    color: rgba(34,34,96,1);
+}
+p{
+    color: rgba(34,34,96,0.6);
+
+}
+.menuItems{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.menuItems li{
+    display: grid;
+    grid-template-columns: 40px auto;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    color: rgba(34,34,96,0.6);
+    padding-left: 1rem;
+    position: relative;
+    padding: 10px;
+    
+
+}
+
+.active::before {
+    position: absolute !important; /* This will override other position styles */
+    left: 0 !important;
+    top: 0 !important;
+    width: 4px !important;
+    height: 100% !important;
+    background: #222260 !important;
+    border-radius: 0 10px 10px 0 !important;
+    box-shadow: inset;
+}
+.active i{
+    color: rgba(34, 34, 96, 0.6) ;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.476);/* Light background color for the pressed effect */
+    color: rgba(34, 34, 96, 0.6); /* Text color */
+    box-shadow: inset 0 8px 20px rgba(237, 234, 234, 0.2), /* Inner shadow */
+                inset 0 -4px 15px rgba(255, 255, 255, 0.5); 
+    border-radius: 10px; 
+    transition: all 0.2s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight:540;
+    font-size: 1.3rem;
+    
+    
+}
+
+.menuItems li:hover {
+    background-color: rgba(255, 255, 255, 0.322); 
+    border-radius: 10px;
+    font-size: 1.6rem;
+
+}
+.Logout-btn{
+    border: 1px solid transparent;
+    background-color:#aca7ee;
+    transition: all 0.2s ease;
+    color: rgba(34,34,96,0.6);
+    border-radius: 12px;
+
+    &&:hover {
+        background-color: rgba(255, 255, 255, 0.322); 
+        border-radius: 10px;
+        font-size: 1.6rem;
+    
+    }
+}

@@ -1,0 +1,38 @@
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 80%;
+}
+
+.form input,
+.form textarea,
+.form select {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #cdcbd4;
+    background: transparent;
+    resize: none;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    color: rgba(34, 34, 96, 0.6);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: rgba(26, 26, 50, 0.687);
+}
+
+
+
+.submit-btn button {
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    &&:hover{
+        background-color: #cdcbd4;
+    }
+}
+
